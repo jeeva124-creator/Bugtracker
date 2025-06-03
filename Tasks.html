@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="/index.css">
+
+</head>
+
+
+<body>
+<div class="navbae"> 
+    <aside class="sidebar">
+        <div class="icon"><i class="fa-solid fa-bug"></i></div>
+        <div class="icon"><i class="fa-solid fa-briefcase"></i></div>
+        <div class="icon"><i class="fa-solid fa-layer-group"></i></div>
+        <div class="icon"><i class="fa-solid fa-chart-line"></i></div>
+        <div class="icon"><i class="fa-solid fa-bullseye"></i></div>
+    </aside>
+      
+    
+    <span> FreshWorks</span>
+    <header class="top-navbar">
+        <div>
+            <nav class="nav-links">
+                <a href="#" class="nav-link active">Tasks</a>
+                <a href="#" class="nav-link">Sprints</a>
+
+            </nav>
+        </div>
+  
+        
+    </header>
+    </div>
+  
+    <main class="board">
+      <div class="column" data-status="todo">
+        <div class="column-header">
+          <h2>Todo</h2>
+          <span class="task-count">0</span>
+        </div>
+        <div class="tasks"></div>
+     
+      </div>
+      
+      <div class="column" data-status="in-progress">
+        <div class="column-header">
+          <h2>Blocked</h2>
+          <span class="task-count">0</span>
+        </div>
+        <div class="tasks"></div>
+       
+      </div>
+      
+      <div class="column" data-status="review">
+        <div class="column-header">
+          <h2>In Progers</h2>
+          <span class="task-count">0</span>
+        </div>
+        <div class="tasks"></div>
+ 
+      </div>
+         <div class="column" data-status="review">
+        <div class="column-header">
+          <h2>In Review</h2>
+          <span class="task-count">0</span>
+        </div>
+        <div class="tasks"></div>
+        
+      </div>
+      
+      <div class="column" data-status="done">
+        <div class="column-header">
+          <h2>Done</h2>
+          <span class="task-count">0</span>
+        </div>
+        <div class="tasks"></div>
+   
+      </div>
+    </main>
+
+  
+</body>
+<script>
+    const links = document.querySelectorAll('.nav-link');
+    links.forEach(link => {
+        link.addEventListener('click', () => {
+            links.forEach(l => l.classList.remove('active'));
+            link.classList.add('active');
+        });
+    });
+</script>
+
+</html>
