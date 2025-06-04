@@ -4,13 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kanban Board</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    crossorigin="anonymous" />
-  <link rel="stylesheet" href="/index.css">
+  <title>Document</title>
+  <link rel="stylesheet" href="/board.css">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
-<!-- sidenav bar -->
 <body>
 
   <aside class="sidebar">
@@ -22,28 +21,26 @@
     <div class="icon"><i class="fa-solid fa-bullseye"></i></div>
 
   </aside>
- 
+
   <!-- topnav bar -->
   <header class="top-navbar">
     <div class="brand">FreshWorks</div>
     <nav class="nav-links">
-      <a href="#" class="nav-link active">Tasks</a>
-   
-       <a href="/Board.html" class="nav-link">Board</a>
+      <a href="./index.html" class="nav-link ">Tasks</a>
+
+      <a href="" class="nav-link">Board</a>
     </nav>
     <div class="but">
       <div class="but">
 
         <button class="buttons" id="createbtn" onclick="opencreate()">Create Organization</button>
-        <button class="buttons" id="joinebtn"onclick="openjoin()">Join Organization</button>
+        <button class="buttons" id="joinebtn" onclick="openjoin()">Join Organization</button>
         <button class="buttons " id="newtaskbtn" onclick=" opennewtask()">New Tasks</button>
       </div>
   </header>
 
-
   <!-- create form -->
   <div id="create">
-
 
     <form action="">
       <button class="close-btn" onclick="closecreat()">×</button>
@@ -54,7 +51,7 @@
       <input type="text" id="id"><br>
       <label for="code">Organization Code</label><br>
       <input type="text" id="code">
-      <button  class="btnc">Create</button>
+      <button class="btnc">Create</button>
     </form>
 
   </div>
@@ -63,17 +60,46 @@
   <!-- join form -->
   <div id="Join">
     <form action="">
-        <button class="close-btn" onclick="closejoin()">×</button>
+      <button class="close-btn" onclick="closejoin()">×</button>
 
       <label for="">Organization Id</label><br>
       <input type="text"><br>
       <label for="">Organization code</label><br>
       <input type="text">
-           <button  class="btnc">Join </button>
+      <button class="btnc">Join </button>
 
     </form>
 
   </div>
+  <div class="assignees">
+     
+ 
+       <div class="form-group">
+      <label>Sprint</label>
+      <select>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>5</option>
+        <option>8</option>
+        <option>13</option>
+
+      </select>
+    </div>
+    <div>
+        <div class="assignee">
+         <div class="name">
+         <img src="https://m.media-amazon.com/images/M/MV5BOTQzOWJiYjEtZmUxMC00YjA5LTgzNjUtYjMyZTVmZjVmMmZiXkEyXkFqcGc@._V1_.jpg" alt="">
+         <p>Barath mohan</p>
+
+         
+         </div>   
+          <hr >
+      </div>
+    </div>
+    </div>
+  </div>
+
 
   <main class="board">
     <!-- Column Template -->
@@ -106,7 +132,6 @@
       </div>
     </div>
 
-
     <div class="column">
       <div class="column-header">
         <span>In Progress</span>
@@ -120,6 +145,7 @@
         </div>
       </div>
     </div>
+
 
     <div class="column">
       <div class="column-header">
@@ -150,31 +176,34 @@
     </div>
   </main>
 
-<div class="modal" id="taskModal">
-  <div class="modal-header">
+  <div class="modal" id="taskModal">
+    <div class="modal-header">
 
-    <h2>New Task</h2>
-     <button class="close-btn" onclick="closeModal()">×</button>
-  </div>
+      <h2>New Task</h2>
+
+      <button class="close-btn" onclick="closeModal()">×</button>
+    </div>
 
 
-  <div class="form-group">
-  </div>
-  <div class="form-group">
-    <label>Name</label>
-    <input type="text" placeholder="Enter task title">
-  </div>
+    <div class="form-group">
+    </div>
+    <div class="form-group">
+      <label>Name</label>
+      <input type="text" placeholder="Enter task title">
+    </div>
 
-  <div class="form-group">
-    <label>Description</label>
-    <textarea rows="4" placeholder="Type something..."></textarea>
-  </div>
-  <div class="form-group">
-    <label>Assignee</label>
-    <select><option>Select User</option></select>
-  </div>
-  
-   <div class="form-group">
+    <div class="form-group">
+      <label>Description</label>
+      <textarea rows="4" placeholder="Type something..."></textarea>
+    </div>
+    <div class="form-group">
+      <label>Assignee</label>
+      <select>
+        <option>Select User</option>
+      </select>
+    </div>
+
+    <div class="form-group">
       <label>Sprint</label>
       <select>
         <option>1</option>
@@ -188,30 +217,33 @@
       </select>
     </div>
     <div class="form-group">
-    <label>Priority</label>
-    <select>
-      <option>Select priority</option>
-       <option>Medium</option>
+      <label>Priority</label>
+      <select>
+        <option>Select priority</option>
         <option>Low</option>
-         <option>High</option>
-    </select>
+        <option>Medium</option>
+        <option>High</option>
+
+      </select>
+    </div>
+    <div class="form-group">
+      <label>Start Date</label>
+      <input type="date">
+    </div>
+    <div class="form-group">
+      <label>End Date</label>
+      <input type="date">
+    </div>
+    <div class="modal-footer">
+      <button class="btn btn-cancel" onclick="closeModal()">Cancel</button>
+      <button class="btn btn-save">Save</button>
+    </div>
   </div>
-  <div class="form-group">
-    <label>Start Date</label>
-    <input type="date">
-  </div>
-  <div class="form-group">
-    <label>End Date</label>
-    <input type="date">
-  </div>
-  <div class="modal-footer">
-    <button class="btn btn-cancel" onclick="closeModal()">Cancel</button>
-    <button class="btn btn-save">Save</button>
-  </div>
-</div>
+
 
 
 
 </body>
-    <script src="/index.js" ></script>
+<script src="/index.js"></script>
+
 </html>
