@@ -33,5 +33,22 @@ Displays all tasks grouped by status for quick overview.
 ### 👥 Board View
 Organizes tasks under each assignee. *(Under Development)*
 
-## 📁 Project Structure
+
+📈 Future Enhancements
+Add task search and filters.
+
+Add drag-and-drop feature for board view.
+
+Authentication and user roles.
+
+Enhanced dashboard analytics.
+
+🙌 Acknowledgements
+Inspired by Jira, Trello.
+
+UI design inspired by modern project management tools.
+
+👨‍💻 Developer
+Jeevanantham
+📧 your.email@example.com
 
