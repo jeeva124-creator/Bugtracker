@@ -97,51 +97,71 @@
           <hr >
       </div>
     </div>
+
+    <div class="ticket-container">
+      <button class="close-btn" onclick="closejoin()">×</button>
+
+  <div class="ticket-header">
+    <span class="ticket-id">FV-79602</span>
+    <div class="status-dropdown">
+      <select>
+        
+        <option>Todo</option>
+          <option>Blocked</option>
+        <option>In Progress</option>
+        <option> In Review</option>
+        <option>Done</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="ticket-title">
+    [L4] [Freshdesk] Custom object name not updated in "group by"
+  </div>
     </div>
   </div>
 
 
   <main class="board">
     <!-- Column Template -->
-    <div class="column">
+    <div class="column" >
       <div class="column-header">
-        <span>Todo</span>
-
+        <span  class="Todo">Todo</span>
       </div>
       <div class="task-card">
-        <p class="task-id">FV-22300</p>
-        <p class="task-title">Enable schedule API</p>
+        <p class="task-id"></p>
+        <p class="task-title"></p>
         <div class="tags">
-          <span class="tag backlog">Backlog</span>
-          <span class="tag medium">Medium</span>
+          <span class="tag backlog"></span>
+          <span class="tag medium"></span>
         </div>
       </div>
     </div>
 
     <div class="column">
       <div class="column-header">
-        <span>Blocked</span>
+        <span class="Blocked">Blocked</span>
       </div>
       <div class="task-card">
-        <p class="task-id">FV-22824</p>
-        <p class="task-title">Fix filter bug in reports</p>
+        <p class="task-id"></p>
+        <p class="task-title"></p>
         <div class="tags">
-          <span class="tag blocked">Blocked</span>
-          <span class="tag high">High</span>
+          <span class="tag blocked"></span>
+          <span class="tag high"></span>
         </div>
       </div>
     </div>
 
     <div class="column">
       <div class="column-header">
-        <span>In Progress</span>
+        <span class="InProgress">In Progress</span>
       </div>
       <div class="task-card">
-        <p class="task-id">FV-22939</p>
-        <p class="task-title">Post processing judge results</p>
+        <p class="task-id"></p>
+        <p class="task-title"></p>
         <div class="tags">
           <span class="tag in-progress">In Progress</span>
-          <span class="tag medium">Medium</span>
+          <span class="tag medium"></span>
         </div>
       </div>
     </div>
@@ -149,28 +169,28 @@
 
     <div class="column">
       <div class="column-header">
-        <span>In Review</span>
+        <span class="InReview">In Review</span>
       </div>
       <div class="task-card">
-        <p class="task-id">FV-22799</p>
-        <p class="task-title">Support IS_ANY for keywords</p>
+        <p class="task-id"></p>
+        <p class="task-title"></p>
         <div class="tags">
-          <span class="tag review">In Review</span>
-          <span class="tag low">Low</span>
+          <span class="tag review" >In Review</span>
+          <span class="tag low"></span>
         </div>
       </div>
     </div>
 
     <div class="column">
       <div class="column-header">
-        <span>Done</span>
+        <span class="Done">Done</span>
       </div>
       <div class="task-card">
-        <p class="task-id">FV-22322</p>
-        <p class="task-title">Upgrade UI limit 400 to 500</p>
+        <p class="task-id"></p>
+        <p class="task-title"></p>
         <div class="tags">
-          <span class="tag done">Done</span>
-          <span class="tag low">Low</span>
+          <span class="tag done"></span>
+          <span class="tag low"></span>
         </div>
       </div>
     </div>
@@ -202,20 +222,6 @@
         <option>Select User</option>
       </select>
     </div>
-
-    <div class="form-group">
-      <label>Sprint</label>
-      <select>
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-        <option>5</option>
-        <option>8</option>
-        <option>13</option>
-    
-
-      </select>
-    </div>
     <div class="form-group">
       <label>Priority</label>
       <select>
@@ -223,13 +229,13 @@
         <option>Low</option>
         <option>Medium</option>
         <option>High</option>
-
       </select>
     </div>
     <div class="form-group">
       <label>Start Date</label>
       <input type="date">
     </div>
+
     <div class="form-group">
       <label>End Date</label>
       <input type="date">

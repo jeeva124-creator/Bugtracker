@@ -36,7 +36,7 @@
 
         <button class="buttons" id="createbtn" onclick="opencreate()">Create Organization</button>
         <button class="buttons" id="joinebtn"onclick="openjoin()">Join Organization</button>
-        <button class="buttons " id="newtaskbtn" onclick=" opennewtask()">New Tasks</button>
+        <button class="buttons " id="newtaskbtn" onclick=" opennewtask()">New Task</button>
       </div>
   </header>
 
@@ -77,81 +77,42 @@
 
   <main class="board">
     <!-- Column Template -->
-    <div class="column">
+    <div class="column todo">
       <div class="column-header">
         <span>Todo</span>
-
-      </div>
-      <div class="task-card">
-        <p class="task-id">FV-22300</p>
-        <p class="task-title">Enable schedule API</p>
-        <div class="tags">
-          <span class="tag backlog">Backlog</span>
-          <span class="tag medium">Medium</span>
-        </div>
       </div>
     </div>
 
-    <div class="column">
+    <div class="column blocked">
       <div class="column-header">
         <span>Blocked</span>
       </div>
-      <div class="task-card">
-        <p class="task-id">FV-22824</p>
-        <p class="task-title">Fix filter bug in reports</p>
-        <div class="tags">
-          <span class="tag blocked">Blocked</span>
-          <span class="tag high">High</span>
-        </div>
-      </div>
     </div>
 
 
-    <div class="column">
+    <div class="column inProgress">
       <div class="column-header">
         <span>In Progress</span>
       </div>
-      <div class="task-card">
-        <p class="task-id">FV-22939</p>
-        <p class="task-title">Post processing judge results</p>
-        <div class="tags">
-          <span class="tag in-progress">In Progress</span>
-          <span class="tag medium">Medium</span>
-        </div>
-      </div>
     </div>
 
-    <div class="column">
+    <div class="column inReview">
       <div class="column-header">
         <span>In Review</span>
       </div>
-      <div class="task-card">
-        <p class="task-id">FV-22799</p>
-        <p class="task-title">Support IS_ANY for keywords</p>
-        <div class="tags">
-          <span class="tag review">In Review</span>
-          <span class="tag low">Low</span>
-        </div>
-      </div>
     </div>
 
-    <div class="column">
+    <div class="column done">
       <div class="column-header">
         <span>Done</span>
-      </div>
-      <div class="task-card">
-        <p class="task-id">FV-22322</p>
-        <p class="task-title">Upgrade UI limit 400 to 500</p>
-        <div class="tags">
-          <span class="tag done">Done</span>
-          <span class="tag low">Low</span>
-        </div>
       </div>
     </div>
   </main>
 
+  <form action="" class="createtask">
 <div class="modal" id="taskModal">
   <div class="modal-header">
+
 
     <h2>New Task</h2>
      <button class="close-btn" onclick="closeModal()">×</button>
@@ -159,6 +120,7 @@
 
 
   <div class="form-group">
+
   </div>
   <div class="form-group">
     <label>Name</label>
@@ -171,11 +133,14 @@
   </div>
   <div class="form-group">
     <label>Assignee</label>
-    <select><option>Select User</option></select>
+    <select>
+      <option>Select User</option>
+      <option>jeeva</option>
+    </select>
   </div>
   
    <div class="form-group">
-      <label>Sprint</label>
+      <label>story point</label>
       <select>
         <option>1</option>
         <option>2</option>
@@ -196,6 +161,12 @@
          <option>High</option>
     </select>
   </div>
+   <div class="form-group">
+    <label>status</label>
+    <select>
+      <option>Todo</option>
+    </select>
+  </div>
   <div class="form-group">
     <label>Start Date</label>
     <input type="date">
@@ -204,12 +175,14 @@
     <label>End Date</label>
     <input type="date">
   </div>
+  
   <div class="modal-footer">
     <button class="btn btn-cancel" onclick="closeModal()">Cancel</button>
     <button class="btn btn-save">Save</button>
   </div>
 </div>
 
+</form>
 
 
 </body>

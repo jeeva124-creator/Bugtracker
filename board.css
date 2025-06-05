@@ -118,19 +118,22 @@ label {
 
 }
 
+
 input {
-  border: 1px rgb(13, 10, 10);
-  padding: 5px;
-  border-radius: 5px;
-  margin-left: 10px
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: 1px solid #ccc;
 }
+
 
 form {
   margin: 20px;
 }
 
 #Join {
-  width: 200px;
+  width: 300px;
   background: white;
   padding: 20px;
   position: fixed;
@@ -374,7 +377,6 @@ textarea {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     flex-shrink: 0;
 }
-
 .column-header {
     display: flex;
     justify-content: space-between;
@@ -382,7 +384,6 @@ textarea {
     font-weight: bold;
     margin-bottom: 10px;
 }
-
 .task-card {
     background-color: #fefefe;
     padding: 10px;
@@ -390,7 +391,6 @@ textarea {
     border-radius: 6px;
     margin-bottom: 10px;
 }
-
 .assignees {
     position: fixed;
     width: 350px;
@@ -398,7 +398,6 @@ textarea {
     background-color: #fdfdfd;
     box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
-
 .assignee {
     width: 250px;
     height: 100px;
@@ -406,7 +405,6 @@ textarea {
     box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
 
 }
-
 .assignee img {
     width: 40px;
     height: 40px;
@@ -421,9 +419,49 @@ textarea {
 p {
     margin: 20px;
 }
-
 hr {
     width: 200px;
     margin-left: 20px;
-
 }
+ .ticket-container {
+  width: 400px;
+  background: white;
+  padding: 20px;
+  position: fixed;
+  top: 50px;
+  right: 50px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  /* display: none; */
+    }
+
+    .ticket-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .ticket-id {
+      font-weight: bold;
+      background: #e1e4e8;
+      padding: 4px 8px;
+      border-radius: 4px;
+    }
+
+    .status-dropdown {
+      position: relative;
+    }
+
+    .status-dropdown select {
+      padding: 6px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+
+    .ticket-title {
+      font-size: 1.2rem;
+      margin: 10px 0;
+    }
+
+
+
