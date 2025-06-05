@@ -58,7 +58,7 @@ document.querySelector('.btn-save').addEventListener('click', function (e) {
     };
 
     // Send POST request to Spring Boot backend
-    fetch('http://localhost:8080/api/tasks', {
+    fetch('https://jeevanantham21-bugtracker.hf.space/api/tasks', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -90,7 +90,7 @@ function closeModal() {
 
  async function fetchTask() {
     try {
-        const response = await fetch("http://localhost:8080/api/tasks"); // Adjust URL if needed
+        const response = await fetch("https://jeevanantham21-bugtracker.hf.space/api/tasks"); // Adjust URL if needed
         if (!response.ok) {
             throw new Error(`HTTP error! Status: ${response.status}`);
         }
