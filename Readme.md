@@ -50,5 +50,5 @@ UI design inspired by modern project management tools.
 
 👨‍💻 Developer
 Jeevanantham
-📧 your.email@example.com
+📧 rjeevanantham20@gmail.com
 
