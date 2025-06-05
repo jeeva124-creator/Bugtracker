@@ -28,12 +28,10 @@ A fully functional bug/task tracking web application built with a modern and cle
 ### ✅ Task View
 Displays all tasks grouped by status for quick overview.
 
-![Task View](./image/Screenshot%20(7).png)
+![Task View](/image/Screenshot%20(7).png)
 
 ### 👥 Board View
 Organizes tasks under each assignee. *(Under Development)*
-
-![Board View](./screenshots/board-view.png)
 
 ## 📁 Project Structure
 
