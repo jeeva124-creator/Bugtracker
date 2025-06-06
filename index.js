@@ -7,6 +7,13 @@ links.forEach(link => {
 });
 
 
+let username = document.getElementById("userName");
+ let username1 = localStorage.getItem("userName");
+console.log(username1);
+
+
+username.textContent = `Welcome,  ${username1}!`
+
 function openModal() {
     document.getElementById("taskModal").classList.add("active");
 }
@@ -166,6 +173,15 @@ function renderTask(task) {
         }
     })
 
+}
+
+let logout = document.querySelector(".logout");
+if (logout) {
+  logout.addEventListener("click", (e) => {
+    e.preventDefault();
+    localStorage.clear();
+    window.location.href = "/login.html";
+  });
 }
 
 fetchTask()

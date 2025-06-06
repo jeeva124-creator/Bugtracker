@@ -89,3 +89,8 @@ hr {
   font-weight: bold;
   color: green;
 }
+
+.sign{
+  text-align: center;
+  /* padding: 5px; */
+}
