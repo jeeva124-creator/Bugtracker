@@ -6,6 +6,7 @@ links.forEach(link => {
     });
 });
 
+
 function openModal() {
     document.getElementById("taskModal").classList.add("active");
 }
@@ -86,6 +87,7 @@ document.querySelector('.btn-save').addEventListener('click', function (e) {
 // Close modal function
 function closeModal() {
     document.getElementById('taskModal').style.display = 'none';
+
 }
 
  async function fetchTask() {
@@ -167,11 +169,3 @@ function renderTask(task) {
 }
 
 fetchTask()
-
-
-
-
-
-
-
-
