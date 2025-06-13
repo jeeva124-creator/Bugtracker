@@ -9,7 +9,6 @@ links.forEach(link => {
 
 let username = document.getElementById("userName");
  let username1 = localStorage.getItem("userName");
-console.log(username1);
 
 
 username.textContent = `Welcome,  ${username1}!`
@@ -83,7 +82,7 @@ document.querySelector('.btn-save').addEventListener('click', function (e) {
     .then(data => {
         console.log('Task created:', data);
         alert('Task created successfully!');
-        closeModal(); // Close modal
+        closeModal(); 
     })
     .catch(error => {
         console.error('Error:', error);
@@ -99,13 +98,17 @@ function closeModal() {
 
  async function fetchTask() {
     try {
-        const response = await fetch("https://jeevanantham21-bugtracker.hf.space/api/tasks"); // Adjust URL if needed
+        // Adjust URL if needed
+        const response = await fetch("https://jeevanantham21-bugtracker.hf.space/api/tasks"); 
+        
         if (!response.ok) {
+
             throw new Error(`HTTP error! Status: ${response.status}`);
         }
+
         const task = await response.json();
         
-        console.log(task); 
+       
         renderTask(task);
     }
      catch (error) {
